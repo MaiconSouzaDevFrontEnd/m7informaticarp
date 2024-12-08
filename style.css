@@ -1,34 +1,104 @@
-@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans&family=Pacifico&family=Parkinsans:wght@300..800&family=Poppins:wght@100&family=Raleway:ital,wght@0,100..900;1,100..900&family=Righteous&family=Roboto:wght@100;300;400;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans&family=Pacifico&family=Parkinsans:wght@300..800&family=Poppins:wght@100&family=Raleway:ital,wght@0,100..900;1,100..900&family=Righteous&family=Roboto:wght@100;300;400;700;900&display=swap");
 
 /* root{
 
 } */
 
-*, html{
-    scroll-behavior: smooth;
+*,
+html {
+  scroll-behavior: smooth;
 }
 
-*{
-    box-sizing:border-box;
-    margin: 0;
-    padding: 0;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-body{
-    min-height: 100dvh;
+body {
+  min-height: 100dvh;
 }
 
 /* CSS - Genérico */
-.flex{
-    display: flex;
+.flex {
+  display: flex;
 }
 
-.margin-auto{
-    margin:0 auto;
+.margin-auto {
+  margin: 0 auto;
 }
 
-.container-1338px{
-    max-width: 1338px;
+.img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.container-1338px {
+  max-width: 1338px;
 }
 /* Fim -CSS - Genérico  */
 
+.header{
+    min-height: 100vh;
+}
+
+.h-box-logo{
+    height: 50px;
+}
+
+.h-logo{
+    height: 100%;
+    object-fit: cover;
+}
+
+.h-nav{
+
+}
+
+.h-nav-menu{}
+
+/* h-btn-menu */
+.h-btn-menu{
+    display: none;
+}
+
+.h-menu-line1{}
+.h-menu-line2{}
+.h-menu-line3{}
+
+/* h-banner */
+.h-banner{}
+.h-banner-title{}
+
+/* showcase */
+.showcase{}
+.sh-box{
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* showcase sh-card */
+.sh-card{
+    height: 380px;
+    width: 280px;
+    box-shadow: 0 0 5px #333;
+    border-radius: 15px;
+    padding: 2%;
+}
+.sh-card-box-img{
+    width: 100%;
+    height: 250px;
+}
+.sh-card-img{
+    height: 100%;
+    object-fit: cover;
+}
+.sh-card-content{}
+.sh-card-title{}
+.sh-card-sub-content{}
+.sh-card-text-content{}
+.sh-card-content-bnts{}
+.sh-card-btns-parcelado{}
+.sh-card-btns-pix{}
