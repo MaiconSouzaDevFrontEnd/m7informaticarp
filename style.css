@@ -40,7 +40,7 @@ body {
 /* Fim -CSS - Genérico  */
 
 .header{
-    min-height: 100vh;
+    min-height: 10vh;
 }
 
 .h-box-logo{
@@ -86,7 +86,12 @@ body {
     box-shadow: 0 0 5px #333;
     border-radius: 15px;
     padding: 2%;
+    position: relative;
 }
+/* front card */
+.sh-sub-card{}
+
+/* card box img */
 .sh-card-box-img{
     width: 100%;
     height: 250px;
@@ -95,10 +100,20 @@ body {
     height: 100%;
     object-fit: cover;
 }
+/* front card content */
 .sh-card-content{}
 .sh-card-title{}
-.sh-card-sub-content{}
-.sh-card-text-content{}
 .sh-card-content-bnts{}
 .sh-card-btns-parcelado{}
 .sh-card-btns-pix{}
+
+.sh-card-sub-content{}
+.sh-card-text-content{}
+
+/* back card content */
+.sh-sub-card-back-content{
+  position: absolute;
+}
+.sh-card-sub-back-content{}
+.sh-card-text-content{}
+
