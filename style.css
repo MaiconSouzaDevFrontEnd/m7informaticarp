@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans&family=Pacifico&family=Parkinsans:wght@300..800&family=Poppins:wght@100&family=Raleway:ital,wght@0,100..900;1,100..900&family=Righteous&family=Roboto:wght@100;300;400;700;900&display=swap");
 
-/* root{
-
-} */
+root{
+--color:rgb(66, 70, 77);
+}
 
 *,
 html {
@@ -29,9 +29,9 @@ body {
 }
 
 .img{
-    height: 100%;
+    /* height: 100%;
     width: 100%;
-    object-fit: cover;
+    object-fit: cover; */
 }
 
 .container-1338px {
@@ -98,10 +98,17 @@ body {
 .sh-card-box-img{
     width: 100%;
     height: 250px;
+    align-items: center;
+    justify-content: center;
 }
 .sh-card-img{
-    height: 100%;
-    object-fit: cover;
+    /* height: 100%;
+    object-fit: cover; */
+    
+    height: 10.125rem;
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
 }
 /* front card content */
 .sh-card-content{}
