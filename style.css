@@ -89,7 +89,10 @@ body {
     position: relative;
 }
 /* front card */
-.sh-sub-card{}
+.sh-sub-card{
+  position: absolute;
+  background-color: white;
+}
 
 /* card box img */
 .sh-card-box-img{
@@ -113,6 +116,7 @@ body {
 /* back card content */
 .sh-sub-card-back-content{
   position: absolute;
+  
 }
 .sh-card-sub-back-content{}
 .sh-card-text-content{}
