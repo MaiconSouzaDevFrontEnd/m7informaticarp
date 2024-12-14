@@ -1,7 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans&family=Pacifico&family=Parkinsans:wght@300..800&family=Poppins:wght@100&family=Raleway:ital,wght@0,100..900;1,100..900&family=Righteous&family=Roboto:wght@100;300;400;700;900&display=swap");
 
-root{
---color:rgb(66, 70, 77);
+/* 
+Familia de FONTES
+font-family: "Parkinsans", sans-serif;
+font-family: "Pacifico", sans-serif;
+font-family: "Montserrat", sans-serif;
+font-family: "Noto Sans", sans-serif;
+font-family: "Righteous", serif, sans-serif;
+font-family: "Roboto", sans-serif;
+font-family: "Raleway", serif, sans-serif;
+font-family: "Poppins", serif, sans-serif;
+font-family: 'Fredericka', Courier, monospace;
+*/
+
+root {
+  --color: rgb(66, 70, 77);
 }
 
 *,
@@ -13,7 +26,7 @@ html {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  
+  font-family: "Poppins", serif, sans-serif;
 }
 
 body {
@@ -25,125 +38,196 @@ body {
   display: flex;
 }
 
-.margin-auto {
+.grid {
+  display: grid;
+}
+
+.container1280px {
+  max-width: 1280px;
   margin: 0 auto;
-}
-
-.img{
-    /* height: 100%;
-    width: 100%;
-    object-fit: cover; */
-}
-
-.container-1338px {
-  max-width: 1338px;
+  padding: 20px;
 }
 /* Fim -CSS - Genérico  */
 
-.header{
-    min-height: 10vh;
+.header {
+  min-height: 10vh;
+
+  justify-content: center; 
+  align-items: center;
+  gap: 50px;
 }
 
-.h-box-logo{
-    height: 50px;
+.h-box-logo {
+  height: 50px;
 }
 
-.h-logo{
-    height: 100%;
-    object-fit: cover;
+.h-logo {
+  height: 100%;
+  object-fit: cover;
 }
 
-.h-nav{
-
+.h-nav {
+  
 }
 
-.h-nav-menu{}
+.h-nav-menu {}
 
 /* h-btn-menu */
-.h-btn-menu{
-    display: none;
+.h-btn-menu {
+  display: none;
 }
 
-.h-menu-line1{}
-.h-menu-line2{}
-.h-menu-line3{}
+.h-menu-line1 {}
+
+.h-menu-line2 {}
+
+.h-menu-line3 {}
 
 /* h-banner */
-.h-banner{}
-.h-banner-title{}
+.h-banner {
+  align-items: ;
+}
+
+.h-banner-title {}
 
 /* showcase */
-.showcase{}
-.sh-box{
-    gap: 10px;
-    justify-content: center;
-    align-items: center;
+.showcase {}
+
+
+/* sections de Produtos */
+
+.thermal {
+ margin-top: 30px; 
 }
 
-/* showcase sh-card */
-.sh-card{
-    height: 380px;
-    width: 280px;
-    box-shadow: 0 0 5px #333;
-    border-radius: 15px;
-    padding: 2%;
-    position: relative;
+.thermalTitle{
+  
 }
+
+.thermalContainerSub{
+  grid-template-columns: repeat(auto-fit, minmax(284px, 284px));
+  gap: 20px;
+}
+
+/* Card-produto */
+.card {
+  /* height: 430px;
+  width: 280px; */
+  box-shadow: 0 0 5px #333;
+  padding: 20px 10px 0;
+  position: relative;
+  border-radius: 3.5%;
+}
+
 /* front card */
-.sh-sub-card{
+.cardSub {
   width: 100%;
+  flex-direction: column;
 }
 
 /* card box img */
-.sh-card-box-img{
-    max-width: 100%;
-    height: 250px;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid #bdbcbc;
-    border-radius: 3.5%;
-    
+.cardBoxImg {
+  width: 100%;
+  padding: 5px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #bdbcbc;
+  border-radius: 3.5%;
 }
-.sh-card-img{
-    height: 80%;
-    width: auto;
-    max-width: 100%;
-    object-fit: cover;
+
+.cardImg {
+  width: 250px;
+  height: 200px;
+  object-fit: contain;
 }
+
 /* front card content */
-.sh-card-content{
-  padding: 2%;
+.cardContent {
+  height: 100%;
+  padding: 1%;
 }
-.sh-card-title{
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+.cardTitle {
+  margin-top: 5px;
+  /* text-align: center; */
   text-transform: uppercase;
+  font-family: "Righteous", serif, sans-serif;
 }
-.sh-card-content-bnts{}
-.sh-card-price{
+
+/* preço produto */
+.cardContentBnts {
+  margin-top: 10px;
+}
+
+.cardPrice{
+  align-items: center;
+  height: 45px;
+}
+
+.cardPrice > span{  
+  font-family: "Noto Sans", sans-serif;
+  font-weight: bold;
+  line-height: 1.8;
+}
+.cardPriceMoeda{
+  font-size: 30px;
+}
+.cardPriceValue, .cardPriceComma{
   font-size: 35px;
 }
-.sh-card-btns-parcelado, .sh-card-btns-pix{
-  padding: 15px;
+
+.cardPriceSub{
+  font-size: 20px;
+  align-self: flex-start;
+}
+
+/* Valor do Produto */
+.cardPrice {
+  margin-bottom: 20px;
+}
+/* Botões de comprar */
+.cardContentBntsContainer{
+  display: none;
+  justify-content:space-evenly;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0 ;
+}
+
+.cardContentBntsContainer span{
+  font-weight: bold;
+}
+
+.cardBtnsParcelado, .cardBtnsPix {
+  border-radius:10px ;
   text-decoration: none;
+  font-family: 'Fredericka', Courier, monospace;
   color: white;
   text-transform: uppercase;
-  font-size:10px ;
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  padding: 10px;
+  flex: 1;
+  letter-spacing: 2px;
 }
 
-.sh-card-btns-parcelado{
-  background-color: cornflowerblue;
+.cardBtnsParcelado {
+  background-color: #3d3d3d;
 }
-.sh-card-btns-pix{
-  background-color: forestgreen;
-} 
 
-.sh-card-sub-content{}
-.sh-card-text-content{}
+.cardBtnsPix {
+  background-color: #2bce5f;
+}
 
-/* back card content */
-.sh-sub-card-back-content{
+/* card back content */
+
+.cardBack {
   display: none;
 }
-.sh-card-sub-back-content{}
-.sh-card-text-content{}
 
+.cardBackTitle{}
+
+.cardBackContent {}
+
+.cardBackContentText{}
