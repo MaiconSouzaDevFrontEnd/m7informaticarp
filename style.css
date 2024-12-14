@@ -13,6 +13,7 @@ html {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  
 }
 
 body {
@@ -90,40 +91,58 @@ body {
 }
 /* front card */
 .sh-sub-card{
-  position: absolute;
-  background-color: white;
+  width: 100%;
 }
 
 /* card box img */
 .sh-card-box-img{
-    width: 100%;
+    max-width: 100%;
     height: 250px;
     align-items: center;
     justify-content: center;
+    border: 1px solid #bdbcbc;
+    border-radius: 3.5%;
+    
 }
 .sh-card-img{
-    /* height: 100%;
-    object-fit: cover; */
-    
-    height: 10.125rem;
+    height: 80%;
     width: auto;
     max-width: 100%;
-    object-fit: contain;
+    object-fit: cover;
 }
 /* front card content */
-.sh-card-content{}
-.sh-card-title{}
+.sh-card-content{
+  padding: 2%;
+}
+.sh-card-title{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-transform: uppercase;
+}
 .sh-card-content-bnts{}
-.sh-card-btns-parcelado{}
-.sh-card-btns-pix{}
+.sh-card-price{
+  font-size: 35px;
+}
+.sh-card-btns-parcelado, .sh-card-btns-pix{
+  padding: 15px;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-size:10px ;
+}
+
+.sh-card-btns-parcelado{
+  background-color: cornflowerblue;
+}
+.sh-card-btns-pix{
+  background-color: forestgreen;
+} 
 
 .sh-card-sub-content{}
 .sh-card-text-content{}
 
 /* back card content */
 .sh-sub-card-back-content{
-  position: absolute;
-  
+  display: none;
 }
 .sh-card-sub-back-content{}
 .sh-card-text-content{}
