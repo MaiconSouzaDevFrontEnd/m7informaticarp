@@ -111,7 +111,7 @@ body {
 
 /* Card-produto */
 .card {
-  /* height: 430px;
+  height: 430px;/* 
   width: 280px; */
   box-shadow: 0 0 5px #333;
   padding: 20px 10px 0;
@@ -131,8 +131,7 @@ body {
   padding: 5px;
   align-items: center;
   justify-content: center;
-  border: 1px solid #bdbcbc;
-  border-radius: 3.5%;
+  
 }
 
 .cardImg {
@@ -144,12 +143,12 @@ body {
 /* front card content */
 .cardContent {
   height: 100%;
-  padding: 1%;
+  flex: 1;
 }
 
 .cardTitle {
   margin-top: 5px;
-  /* text-align: center; */
+  font-size: 15px;
   text-transform: uppercase;
   font-family: "Righteous", serif, sans-serif;
 }
@@ -187,7 +186,7 @@ body {
 }
 /* Botões de comprar */
 .cardContentBntsContainer{
-  display: none;
+/*   display: none; */
   justify-content:space-evenly;
   align-items: center;
   gap: 10px;
