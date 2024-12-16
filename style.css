@@ -47,12 +47,13 @@ body {
   margin: 0 auto;
   padding: 20px;
 }
+
 /* Fim -CSS - Genérico  */
 
 .header {
   min-height: 10vh;
 
-  justify-content: center; 
+  justify-content: center;
   align-items: center;
   gap: 50px;
 }
@@ -66,9 +67,7 @@ body {
   object-fit: cover;
 }
 
-.h-nav {
-  
-}
+.h-nav {}
 
 .h-nav-menu {}
 
@@ -93,30 +92,29 @@ body {
 /* showcase */
 .showcase {}
 
-
 /* sections de Produtos */
 
 .thermal {
- margin-top: 30px; 
+  margin-top: 30px;
 }
 
-.thermalTitle{
-  
-}
+.thermalTitle {}
 
-.thermalContainerSub{
+.thermalContainerSub {
   grid-template-columns: repeat(auto-fit, minmax(284px, 284px));
   gap: 20px;
 }
 
 /* Card-produto */
 .card {
-  height: 430px;/* 
+  position: relative;
+  height: 430px;
+  /* 
   width: 280px; */
   box-shadow: 0 0 5px #333;
   padding: 20px 10px 0;
-  position: relative;
   border-radius: 3.5%;
+  overflow: hidden;
 }
 
 /* front card */
@@ -131,7 +129,6 @@ body {
   padding: 5px;
   align-items: center;
   justify-content: center;
-  
 }
 
 .cardImg {
@@ -158,24 +155,27 @@ body {
   margin-top: 10px;
 }
 
-.cardPrice{
+.cardPrice {
   align-items: center;
   height: 45px;
 }
 
-.cardPrice > span{  
+.cardPrice>span {
   font-family: "Noto Sans", sans-serif;
   font-weight: bold;
   line-height: 1.8;
 }
-.cardPriceMoeda{
+
+.cardPriceMoeda {
   font-size: 30px;
 }
-.cardPriceValue, .cardPriceComma{
+
+.cardPriceValue,
+.cardPriceComma {
   font-size: 35px;
 }
 
-.cardPriceSub{
+.cardPriceSub {
   font-size: 20px;
   align-self: flex-start;
 }
@@ -184,23 +184,25 @@ body {
 .cardPrice {
   margin-bottom: 20px;
 }
+
 /* Botões de comprar */
-.cardContentBntsContainer{
-/*   display: none; */
-  justify-content:space-evenly;
+.cardContentBntsContainer {
+  /*   display: none; */
+  justify-content: space-evenly;
   align-items: center;
   gap: 10px;
-  margin: 10px 0 ;
+  margin: 10px 0;
 }
 
-.cardContentBntsContainer span{
+.cardContentBntsContainer span {
   font-weight: bold;
 }
 
-.cardBtnsParcelado, .cardBtnsPix {
-  border-radius:10px ;
+.cardBtnsParcelado,
+.cardBtnsPix {
+  border-radius: 10px;
   text-decoration: none;
-  font-family: 'Fredericka', Courier, monospace;
+  font-family: "Fredericka", Courier, monospace;
   color: white;
   text-transform: uppercase;
   font-weight: 500;
@@ -219,14 +221,31 @@ body {
   background-color: #2bce5f;
 }
 
+.button-box{
+  border: none;
+}
+
+.label-bntBack{
+  width: 100%;
+}
+.input-bntBack{ 
+  width: 100%;
+}
+.buttonDetails{
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+}
 /* card back content */
 
 .cardBack {
-  display: none;
+  position: absolute;
+  background-color: #2bce5f;
+  bottom: -150px;
+  left: 0;
 }
 
-.cardBackTitle{}
+.cardBackTitle {}
 
 .cardBackContent {}
 
-.cardBackContentText{}
+.cardBackContentText {}
