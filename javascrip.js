@@ -1,5 +1,6 @@
 const bntDetails = document.querySelector(".buttonDetails");
-function action1(){
-    alert("vc clicou no buttom detalhes");
-};
-bntDetails.addEventListener('click', action1);
+const cardBack = document.querySelector(".cardBack");
+function backCard(){
+    cardBack.classList.add('backStyle');
+}
+bntDetails.addEventListener('click', backCard);

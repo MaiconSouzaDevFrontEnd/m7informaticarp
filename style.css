@@ -235,7 +235,12 @@ body {
   width: 100%;
   font-family: "Roboto", sans-serif;
 }
+
+
 /* card back content */
+.backStyle{
+  bottom: 0;
+}
 
 .cardBack {
   position: absolute;
