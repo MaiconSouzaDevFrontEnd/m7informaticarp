@@ -1,6 +1,10 @@
 const bntDetails = document.querySelector(".buttonDetails");
 const cardBack = document.querySelector(".cardBack");
-function backCard(){
-    cardBack.style.top = "0px";
+const cardCloseCardBack = document.querySelector(".btnCloseCardBack")
+
+function bntsOpenClose(){
+    cardBack.classList.toggle('BackActive')
 }
-bntDetails.addEventListener('click', backCard);
+var btnOpen = bntDetails.target
+bntDetails.addEventListener('click', bntsOpenClose)
+cardCloseCardBack.addEventListener('click', bntsOpenClose)

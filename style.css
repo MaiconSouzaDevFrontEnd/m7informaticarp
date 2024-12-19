@@ -109,12 +109,10 @@ body {
 .card {
   position: relative;
   height: 430px;
-  /* 
-  width: 280px; */
   box-shadow: 0 0 5px #333;
   padding: 20px 10px 0;
   border-radius: 3.5%;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 
 /* front card */
@@ -187,10 +185,9 @@ body {
 
 /* Botões de comprar */
 .cardContentBntsContainer {
-  /*   display: none; */
   justify-content: space-evenly;
   align-items: center;
-  gap: 10px;
+  gap: 20px;
   margin: 10px 0;
 }
 
@@ -237,8 +234,8 @@ body {
 
 .cardBack {
   position: absolute;
-  
-  left: 0px;
+  top: 450px;
+  left: 0;
   height: 100%;
   color: #000;
   font-weight: bold;
@@ -246,10 +243,35 @@ body {
   padding: 25px;
 }
 
-.cardBackTitle {
-
+.cardBack.BackActive{
+  top: 0;
 }
 
-.cardBackContent {}
+.btnCloseCardBack{
+  display: block;
+  margin-left: auto;
+  padding: 5px 5px;
+  color: rgb(255, 255, 255);
+  background-color: #808080;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  border:none;
+  border-radius: 3px;
+  cursor: pointer;
+}
 
-.cardBackContentText {}
+
+.cardBackTitle {
+  text-decoration: underline;
+  font-size: 15px;
+  margin: 25px 0;
+}
+
+.cardBackContent {
+  list-style: square;
+  padding: 0 10px;
+}
+
+.cardBackContentText {
+  line-height: 1.8;
+}
