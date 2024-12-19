@@ -114,7 +114,7 @@ body {
   box-shadow: 0 0 5px #333;
   padding: 20px 10px 0;
   border-radius: 3.5%;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 /* front card */
@@ -201,6 +201,7 @@ body {
 .cardBtnsParcelado,
 .cardBtnsPix {
   border-radius: 10px;
+  border:1.5px solid #000;
   text-decoration: none;
   font-family: "Fredericka", Courier, monospace;
   color: white;
@@ -221,35 +222,33 @@ body {
   background-color: #2bce5f;
 }
 
-.button-box{
-  border: none;
-}
-
-.label-bntBack{
-  width: 100%;
-}
-.input-bntBack{ 
-  width: 100%;
-}
+/* Botão Mais detalhes */
 .buttonDetails{
   width: 100%;
   font-family: "Roboto", sans-serif;
+  border: none;
+  border-radius: 7px;
+  padding: 5px 0;
+  box-shadow: 0 0 1px 1px#000;
+  cursor: pointer;
 }
-
 
 /* card back content */
-.backStyle{
-  bottom: 0;
-}
 
 .cardBack {
   position: absolute;
-  background-color: #2bce5f;
-  bottom: -150px;
-  left: 0;
+  
+  left: 0px;
+  height: 100%;
+  color: #000;
+  font-weight: bold;
+  background-color: rgb(252, 252, 252);
+  padding: 25px;
 }
 
-.cardBackTitle {}
+.cardBackTitle {
+
+}
 
 .cardBackContent {}
 
